@@ -436,7 +436,7 @@ function Game(Props) {
       case /* Over */2 :
           return "Game Over...";
       case /* Clear */3 :
-          return "Game Clear! score: " + (Date.now() - startTime).toString();
+          return "Game Clear! score: " + (10000000.0 - (Date.now() - startTime)).toString();
       
     }
   };

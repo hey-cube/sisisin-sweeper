@@ -306,7 +306,8 @@ let make = () => {
     | MineSweeper.Playing => "Now Playing: " ++ levelText
     | MineSweeper.Over => "Game Over..."
     | MineSweeper.Clear =>
-      "Game Clear! score: " ++ Js.Float.toString(Js.Date.now() -. startTime)
+      "Game Clear! score: "
+      ++ Js.Float.toString(10000000.0 -. (Js.Date.now() -. startTime))
     };
   };
 
