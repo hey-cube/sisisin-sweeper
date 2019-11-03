@@ -2,14 +2,14 @@
 
 var React = require("react");
 var ReactDom = require("react-dom");
-var Game$ReasonReactExamples = require("./Game/Game.bs.js");
-var ExampleStyles$ReasonReactExamples = require("./ExampleStyles.bs.js");
+var Game$SisisinSweeper = require("./Game/Game.bs.js");
+var ExampleStyles$SisisinSweeper = require("./ExampleStyles.bs.js");
 
 var style = document.createElement("style");
 
 document.head.appendChild(style);
 
-style.innerHTML = ExampleStyles$ReasonReactExamples.style;
+style.innerHTML = ExampleStyles$SisisinSweeper.style;
 
 function makeContainer(text) {
   var container = document.createElement("div");
@@ -25,7 +25,7 @@ function makeContainer(text) {
   return content;
 }
 
-ReactDom.render(React.createElement(Game$ReasonReactExamples.make, { }), makeContainer("sisisin sweeper"));
+ReactDom.render(React.createElement(Game$SisisinSweeper.make, { }), makeContainer("sisisin sweeper"));
 
 exports.style = style;
 exports.makeContainer = makeContainer;
