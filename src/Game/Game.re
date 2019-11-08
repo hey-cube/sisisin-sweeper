@@ -302,12 +302,13 @@ let make = () => {
       | MineSweeper.Hard => "Hard"
       };
     switch (progress) {
-    | MineSweeper.Waiting => "Let's try: " ++ levelText
+    | MineSweeper.Waiting => "Let's Try: " ++ levelText
     | MineSweeper.Playing => "Now Playing: " ++ levelText
     | MineSweeper.Over => "Game Over..."
     | MineSweeper.Clear =>
-      "Game Clear! score: "
-      ++ Js.Float.toString(10000000.0 -. (Js.Date.now() -. startTime))
+      "Game Clear! time: "
+      ++ Js.Float.toString(Js.Date.now() -. startTime)
+      ++ "ms"
     };
   };
 
